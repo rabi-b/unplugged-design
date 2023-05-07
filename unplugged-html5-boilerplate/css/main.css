@@ -119,13 +119,15 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-  padding: 20px 0;
+  margin: 20px 0; 
+  font-weight: 500;
 }
 
 p {
@@ -150,6 +152,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 /* Header Styles */
@@ -163,7 +166,6 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-
 }
 
 header .header-divider {
@@ -171,6 +173,7 @@ header .header-divider {
   height: 1px;
   /* remember to set this!! */
   margin: 10px 0 20px 0;
+  color: #3a3a3a;
 }
 
 header nav {
@@ -178,7 +181,6 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  /*??*/
   width: 60%;
 }
 
@@ -188,6 +190,7 @@ header nav ul {
   /*align-items: center; -- flex-start as default so no need to define*/
   width: 100%;
   /* not 30% because of space-around setting */
+  text-transform: uppercase;
 }
 
 /* Footer Styles */
@@ -196,6 +199,8 @@ header nav ul {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+  color: #e2e3ed;
+  text-align: center;
 }
 
 footer h4 {
@@ -215,17 +220,21 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
 }
 
 footer p {
   margin: 0;
 }
 
-footer .copyright p {
-  padding: 20px 0;
-}
-
 /*--Mobile Styles - Homepage--*/
+
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  color: #e2e3ed;
+}
 
 .hero-area {
   display: flex;
@@ -241,15 +250,34 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
-input [type=email] {
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=email] { /* no spaces between input and brackets */
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
   padding: 1em;
 }
 
-input [type=button] {
+input[type=button] {
+  width: 100%;
   padding: 20px 0;
   margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -257,6 +285,7 @@ input [type=button] {
   justify-content: center;
   /*align-items: center; -- no need because it's in column*/
   flex-flow: row wrap;
+  color: #e2e3ed;
 }
 
 .features h2 {
@@ -272,6 +301,7 @@ input [type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .features article {
@@ -289,15 +319,18 @@ input [type=button] {
   justify-content: center;
   /*align-items: center; no need because it's in column*/
   flex-flow: row wrap;
+  color: #e2e3ed;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1em;
 }
 
 .reviews h3 {
   width: 50%;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 /*--Mobile Styles - About--*/
@@ -307,6 +340,8 @@ input [type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .contact-section {
@@ -314,6 +349,8 @@ input [type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
 /*--Mobile Styles - FAQ--*/
@@ -323,6 +360,8 @@ input [type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .faq .content-wrapper {
@@ -335,11 +374,13 @@ input [type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1em;
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
+
 
 
 
