@@ -135,9 +135,13 @@ p {
   line-height: 1.125em;
 }
 
-img {}
+img {
+  width: 100%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -172,8 +176,7 @@ header .header-divider {
   width: 90%;
   height: 1px;
   /* remember to set this!! */
-  margin: 10px 0 20px 0;
-  color: #3a3a3a;
+  color: #e2e3ed;
 }
 
 header nav {
@@ -191,6 +194,15 @@ header nav ul {
   width: 100%;
   /* not 30% because of space-around setting */
   text-transform: uppercase;
+  padding: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* Footer Styles */
@@ -233,7 +245,9 @@ footer p {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2.25em;
   font-weight: 500;
+  line-height: 1.2em;
   color: #e2e3ed;
+  margin: 0;
 }
 
 .hero-area {
@@ -243,6 +257,10 @@ footer p {
   flex-flow: row wrap;
   /*padding: 50px 0;
   margin-bottom: 50px;*/
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  flex-flow: row wrap;
+  height: 500px;
 }
 
 aside {
@@ -286,6 +304,8 @@ input[type=button] {
   /*align-items: center; -- no need because it's in column*/
   flex-flow: row wrap;
   color: #e2e3ed;
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -329,8 +349,16 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 50%;
-  /* padding: 20px 0; */
+  width: 60%;
+  margin: 20px 0;
+}
+
+.reviews figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /*--Mobile Styles - About--*/
@@ -476,9 +504,38 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /* global styles */
 
+   .hero-area h1 {
+    font-size: 2.5em;
+    width: 80%;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+  
+  }
+
+  h3 {
+    font-size: 1.5em;
+   
+  }
+
+  footer h4, .contact-section h4 {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 1.125em;
+  }
+
+  .faq h4, .faq p {
+    font-size: 0.875em;
+    line-height: 15.75px;
+  }
+
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
   /* header */
@@ -507,6 +564,17 @@ input[type=button] {
     display: none;
   }
 
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .hero-area {
+    height: 500px;
+  }
   /* aside */
 
   aside .content-wrapper {
@@ -546,8 +614,20 @@ input[type=button] {
   }
 
   .reviews article div {
-    width: 49%;
+    width: 45%;
     /* moves text to the right */
+  }
+
+  .reviews figure {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews h3 {
+    width: 70%;
   }
 
   /* footer */
@@ -589,7 +669,8 @@ input[type=button] {
   }
 
   .contact-section h2 {
-    width: 80%;
+    width: 70%;
+    margin: 0;
   }
 
   .contact-content {
@@ -621,6 +702,28 @@ input[type=button] {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  .faq h2, .mission h2 {
+    font-size: 3em;
+  }
+
+  h3, h4 {
+    font-size: 1.875em;
+  }
+
+  .faq h4, .faq p {
+    font-size: 1.125em;
+    line-height: 1.125em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
+
   /* header */
   header {
     padding: 15px 0;
@@ -628,8 +731,9 @@ input[type=button] {
 
   /* hero */
   .hero-area h1 {
-    width: 85%;
-    margin: 0;
+    font-size: 3.7em;
+    line-height: 1em;
+    padding-top: 25px;
   }
 
   /* aside */
@@ -639,6 +743,9 @@ input[type=button] {
     margin: 0;
   }
 
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
   /* features */
   .features article {
     display: flex;
@@ -648,9 +755,6 @@ input[type=button] {
     flex-basis: 33%;
   }
 
-  .features-item-description {
-    width: 33%%;
-  }
 
   .features h2 {
     width: 90%;
@@ -660,13 +764,14 @@ input[type=button] {
 
   .mission h2 {
     width: 90%;
+    margin: 0;
   }
 
   /* --FAQ-- */
   .faq h2 {
     width: 80%;
   }
-}
+
 
 /* ==========================================================================
    Print styles.
