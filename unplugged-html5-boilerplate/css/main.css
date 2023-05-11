@@ -132,7 +132,7 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.125em;
+  line-height: 1.3em;
 }
 
 img {
@@ -206,7 +206,6 @@ header figure {
 }
 
 /* Footer Styles */
-
 
 footer .content-wrapper {
   width: 55%;
@@ -316,6 +315,11 @@ input[type=button] {
   margin: 0;
 }
 
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -329,10 +333,6 @@ input[type=button] {
   padding: 30px 0;
 }
 
-.features-item-description {
-  /* not in solution */
-  padding: 40px 0 30px 0;
-}
 
 .reviews {
   display: flex;
