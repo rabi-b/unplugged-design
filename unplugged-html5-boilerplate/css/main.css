@@ -256,7 +256,6 @@ footer p {
   font-weight: 500;
   line-height: 1.2em;
   color: #e2e3ed;
-  margin: 0;
 }
 
 .hero-area {
@@ -655,12 +654,14 @@ input[type=button] {
   }
 
   .reviews h3 {
-    width: 70%;
+    width: 80%;
+    margin: 0;
   }
 
   .reviews h2 {
     width: 80%;
     margin: 0;
+    padding: 20px 0;
   }
 
   /* footer */
@@ -786,7 +787,7 @@ input[type=button] {
   .hero-area h1 {
     font-size: 3.7em;
     line-height: 1em;
-    padding-top: 25px;
+    padding-top: 20px;
   }
 
   /* aside */
@@ -811,6 +812,10 @@ input[type=button] {
 
   .features h2 {
     width: 90%;
+  }
+
+  .reviews article {
+    padding: 50px 0;
   }
 
   /* --ABOUT-- */
